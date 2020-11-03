@@ -10,7 +10,7 @@ Voter.destroy_all
 Poll.destroy_all
 
 20.times do 
-    Voter.create(first_name: Faker::Name.first_name last_name: Faker::Name.last_name, voter_identification: Faker::Barcode.ean)
+    Voter.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, voter_identification: Faker::Barcode.ean)
 end
 
 10.times do 
